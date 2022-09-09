@@ -12,7 +12,7 @@ spec: #Very specific to this application kind
     path: dev # name of the directory of the project(To track specific path)
   destination: 
     server: https://kubernetes.default.svc #internal service name of K8s api server to check >kubectl get svc
-    namespace: myapp #since this namespace doesn't already exist, we can configure that (syncPolicy), so that it always has this namespace
+    namespace: myapp-check #since this namespace doesn't already exist, we can configure that (syncPolicy), so that it always has this namespace
 
   syncPolicy:
     syncOptions:
